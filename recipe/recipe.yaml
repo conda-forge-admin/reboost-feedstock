@@ -21,7 +21,6 @@ build:
   python:
     entry_points:
       - reboost-optical = reboost.optmap.cli:optical_cli
-      - reboost = reboost.cli:cli
 
 requirements:
   host:
@@ -59,7 +58,6 @@ tests:
         - ${{ python_min }}
         - ${{ python_check_max }}.*
   - script:
-      - reboost -h
       - reboost-optical -h
 
 about:
